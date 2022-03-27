@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "5ce25a01-5f3a-48bc-8d29-dca7e7cfb841",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "71bdeded-cc83-4196-ba36-dcccedf85e6f",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/encodes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"encodes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/encodes/4f8915c8-c8ee-4a4f-8978-485b15bf8e24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"encodes",
+						"4f8915c8-c8ee-4a4f-8978-485b15bf8e24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n         \"name\": \"test\",\n        \"provider\": \"AWS\"\n    },"
+				},
+				"url": {
+					"raw": "http://localhost:8080/encodes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"encodes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/encodes/f140fd80-a598-4864-896d-8b0e1f2b70d8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"encodes",
+						"f140fd80-a598-4864-896d-8b0e1f2b70d8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
